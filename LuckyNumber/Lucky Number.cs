@@ -63,19 +63,27 @@ namespace LuckyNumber
 
         private void getLuckyNum_Click(object sender, EventArgs e)
         {
+            int luckynumber = getNumber(
+
+                (int)year.SelectedItem,
+                (int)month.SelectedIndex +1,
+                (int)day.SelectedItem);
+                
             
             //calling the Result form
-            ResultForm display = new ResultForm();
-            
-            if (month.CanSelect)
-            {
-                Random rnd = new Random();
-                int num = rnd.Next(12);
-                display.lbl_LuckyNumber.Text = num;
-            }
+            ResultForm display = new ResultForm(luckynumber);
+         
             
             //display the ResultForm
             display.ShowDialog();
+        }
+
+        public int getNumber(int year, int month, int day)
+        {
+            int luckynumber = ((year * month) + day);
+           
+            return luckynumber;
+
         }
     }
 }

@@ -12,9 +12,15 @@ namespace LuckyNumber
 {
     public partial class ResultForm : Form
     {
-        public ResultForm()
+        public ResultForm(int luckyNum)
         {
             InitializeComponent();
+            lbl_LuckyNumber.Text = "" + luckyNum;
+        }
+
+        private void ResultForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

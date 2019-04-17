@@ -41,6 +41,7 @@
             this.lbl_LuckyNumber.Size = new System.Drawing.Size(391, 126);
             this.lbl_LuckyNumber.TabIndex = 1;
             this.lbl_LuckyNumber.Text = "0";
+            this.lbl_LuckyNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResultForm
             // 

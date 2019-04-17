@@ -80,7 +80,7 @@ namespace LuckyNumber
 
         public int getNumber(int year, int month, int day)
         {
-            int luckynumber = ((year * month) + day);
+            int luckynumber = ((year * month) / day);
            
             return luckynumber;
 

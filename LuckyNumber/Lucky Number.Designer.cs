@@ -34,8 +34,6 @@
             this.year = new System.Windows.Forms.ComboBox();
             this.month = new System.Windows.Forms.ComboBox();
             this.day = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.color = new System.Windows.Forms.ComboBox();
             this.getLuckyNum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -91,29 +89,12 @@
             this.day.Size = new System.Drawing.Size(206, 32);
             this.day.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(166, 256);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 25);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Favorite Color";
-            // 
-            // color
-            // 
-            this.color.FormattingEnabled = true;
-            this.color.Location = new System.Drawing.Point(395, 249);
-            this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(206, 32);
-            this.color.TabIndex = 7;
-            // 
             // getLuckyNum
             // 
             this.getLuckyNum.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.getLuckyNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.getLuckyNum.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.getLuckyNum.Location = new System.Drawing.Point(222, 334);
+            this.getLuckyNum.Location = new System.Drawing.Point(188, 289);
             this.getLuckyNum.Name = "getLuckyNum";
             this.getLuckyNum.Size = new System.Drawing.Size(321, 67);
             this.getLuckyNum.TabIndex = 8;
@@ -125,10 +106,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 450);
+            this.ClientSize = new System.Drawing.Size(672, 381);
             this.Controls.Add(this.getLuckyNum);
-            this.Controls.Add(this.color);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.day);
             this.Controls.Add(this.month);
             this.Controls.Add(this.year);
@@ -151,8 +130,6 @@
         private System.Windows.Forms.ComboBox year;
         private System.Windows.Forms.ComboBox month;
         private System.Windows.Forms.ComboBox day;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox color;
         private System.Windows.Forms.Button getLuckyNum;
     }
 }

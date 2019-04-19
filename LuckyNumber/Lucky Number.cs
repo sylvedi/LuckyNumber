@@ -34,14 +34,14 @@ namespace LuckyNumber
             
             this.month.Items.AddRange(new object[12] { "January", "Febuary", "March", "April", "May", "June", "July", "Auguest", "September", "October", "November", "December" });
 
-            this.color.Items.AddRange(new object[10] { "White","Black","Green","Blue","Gold","Silver","Yellow","Orange","Pink","Purple",});
+            
         }
 
         private void month_SelectedIndexChanged(object sender, EventArgs e)
         {
            
 
-            if (month.SelectedIndex == 0 || month.SelectedIndex == 2 || month.SelectedIndex == 6 || month.SelectedIndex == 7
+            if (month.SelectedIndex == 0 || month.SelectedIndex == 2 || month.SelectedIndex == 4 || month.SelectedIndex == 6 || month.SelectedIndex == 7
                  || month.SelectedIndex == 9 || month.SelectedIndex == 11)
             {
                 for (int i = 0; i < days31.Length; i++)
@@ -58,6 +58,15 @@ namespace LuckyNumber
                     days29[i] = i + 1;
                 }
                 this.day.DataSource = days29;
+            }
+
+            if (month.SelectedIndex == 3 || month.SelectedIndex == 5 || month.SelectedIndex == 8 || month.SelectedIndex == 10)
+            {
+                for (int i = 0; i < days30.Length; i++)
+                {
+                    days30[i] = i + 1;
+                }
+                this.day.DataSource = days30;
             }
         }
 
